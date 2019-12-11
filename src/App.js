@@ -7,20 +7,20 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      weatherInfo: []
+      weatherInfo: {}
     }
   }
   
   componentWillMount() {
+    
+  }
+  
+  componentDidMount() {
     fetch('https://samples.openweathermap.org/data/2.5/forecast/daily?q=Berlin,us&appid=b6907d289e10d714a6e88b30761fae22')
       .then(res => res.json())
       .then(({list}) => this.setState({
         weatherInfo: list[0]
     }, () => console.log({ weatherInfo: this.state.weatherInfo })))
-  }
-  
-  componentDidMount() {
-    
   }
   
   renderSimpleCard() {

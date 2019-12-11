@@ -12,10 +12,10 @@ class App extends React.Component {
   }
   
   componentWillMount() {
-    fetch('https://samples.openweathermap.org/data/2.5/forecast/hourly?q=Berlin,us&appid=b6907d289e10d714a6e88b30761fae22')
+    fetch('https://samples.openweathermap.org/data/2.5/forecast/daily?q=Berlin,us&appid=b6907d289e10d714a6e88b30761fae22')
       .then(res => res.json())
-      .then((result) => this.setState({
-        weatherInfo: result
+      .then(({list}) => this.setState({
+        weatherInfo: list[0]
     }, () => console.log({ weatherInfo: this.state.weatherInfo })))
   }
   
@@ -35,8 +35,8 @@ class App extends React.Component {
                   <a href="javascript:;"><span class="lnr lnr-chevron-left"></span></a>
                   <a href="javascript:;"><span class="lnr lnr-cog"></span></a>
                 </div>
-                <h1 class="heading">Clear night</h1>
-                <h3 class="location">Dhaka, Bangladesh</h3>
+                <h1 class="heading">{this.state.weatherInfo.weather.main}</h1>
+                <h3 class="location">Berlin</h3>
                 <p class="temp">
                   <span class="temp-value">20</span>
                   <span class="deg">0</span>

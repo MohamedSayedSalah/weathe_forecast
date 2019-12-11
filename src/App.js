@@ -12,16 +12,20 @@ class App extends React.Component {
   }
   
   componentWillMount() {
-    
+    fetch('https://samples.openweathermap.org/data/2.5/forecast/hourly?q=Berlin,us&appid=b6907d289e10d714a6e88b30761fae22')
+      .then(res => res.json())
+      .then((result) => this.setState({
+        weatherInfo: result
+    }, () => console.log({ weatherInfo: this.state.weatherInfo })))
   }
   
   componentDidMount() {
     
   }
   
-  render() {
+  renderSimpleCard() {
     return (
-    <div class="container">
+      <div class="container">
       <div class="row">
         <div class="col">
           <div class="weather-card one">
@@ -63,7 +67,13 @@ class App extends React.Component {
         </div>
       </div>
     </div>
-  );
+    )
+  }
+  
+  render() {
+    return (
+      <div>{this.renderSimpleCard()}</div>
+    );
   }
   
   

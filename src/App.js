@@ -35,7 +35,7 @@ class App extends React.Component {
                   <a href="javascript:;"><span class="lnr lnr-chevron-left"></span></a>
                   <a href="javascript:;"><span class="lnr lnr-cog"></span></a>
                 </div>
-                <h1 class="heading">{this.state.weatherInfo.weather.main}</h1>
+<!--                 <h1 class="heading">{this.state.weatherInfo.weather.main}</h1> -->
                 <h3 class="location">Berlin</h3>
                 <p class="temp">
                   <span class="temp-value">20</span>
@@ -72,7 +72,7 @@ class App extends React.Component {
   
   render() {
     return (
-      <div>{this.renderSimpleCard()}</div>
+      // <div>{this.renderSimpleCard()}</div>
     );
   }
   

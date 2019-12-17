@@ -89,13 +89,10 @@ class App extends React.Component {
   }
 
   render() {
-    // return (
-    // <div>{this.renderSimpleCard()}</div>
-    // );
-    {
-      alert("111");
-    }
-    return <div></div>;
+    return (
+    <div>{this.renderSimpleCard()}</div>
+    );
+    
   }
 }
 

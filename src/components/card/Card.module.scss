@@ -1,0 +1,60 @@
+.card {
+  width: 40%;
+  left: 30%;
+  background-color: gainsboro;
+  padding-bottom: 2px;
+}
+
+.cardBody{
+  background-color: #f7f7f7;
+}
+
+.time{
+  font: 14px Helvetica ;
+  display:block;
+  color: #1F1F1F;
+}
+
+.date{
+  font: 14px Helvetica;
+  color: #878787;
+  font-weight: 400;
+}
+
+.windSpeed {
+  float: right ;
+  color: #878787;
+  right: 10%;
+}
+
+
+.weatherDescription{
+  left: 45%;
+  font: 16px Helvetica;
+}
+
+.weather{
+  left: 35%;
+  font: 30px Helvetica;
+  line-height: 50%;
+}
+
+.timeIcon{
+  font-size: 50px;
+  position: absolute;
+  top:10%;
+  left: 20%
+}
+
+.humidity{
+  left: 40%;
+  position: absolute;
+}
+
+
+.windSpeed,.weather,.weatherDescription{
+  position: absolute;
+  top:35%;
+}
+
+

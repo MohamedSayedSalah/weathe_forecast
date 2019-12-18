@@ -58,7 +58,7 @@ export default ({hourlyInfo}) =>{
                 </React.Fragment>
             }>
 
-                <span  >RealFeel®: {convertFromKelvin(hourlyInfo.main.feels_like)}°</span>
+                <span  className={cardStyle.realFeel}>RealFeel®: {convertFromKelvin(hourlyInfo.main.feels_like)}°</span>
                 <span  className={cardStyle.humidity}>Humidity: {hourlyInfo.main.humidity}%</span>
 
 

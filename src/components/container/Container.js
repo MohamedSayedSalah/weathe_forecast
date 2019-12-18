@@ -7,7 +7,7 @@ import containerStyle from './Container.module.scss'
 export default () => {
 
     const [weatherInfo, loading] = useWeatherForecastApi();
-    console.log(weatherInfo);
+
     return (
 
         <Row className={containerStyle.container}>

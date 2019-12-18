@@ -10,13 +10,13 @@
 }
 
 .time{
-  font: 14px Helvetica ;
+  font: 2vmin Helvetica ;
   display:block;
   color: #1F1F1F;
 }
 
 .date{
-  font: 14px Helvetica;
+  font: 2vmin Helvetica;
   color: #878787;
   font-weight: 400;
 }
@@ -25,22 +25,23 @@
   float: right ;
   color: #878787;
   right: 10%;
+  font: 2vmin Helvetica;
 }
 
 
 .weatherDescription{
   left: 45%;
-  font: 16px Helvetica;
+  font: 3vmin Helvetica;
 }
 
 .weather{
   left: 35%;
-  font: 30px Helvetica;
+  font: 4vmin Helvetica;
   line-height: 50%;
 }
 
 .timeIcon{
-  font-size: 50px;
+  font-size: 7vmin;
   position: absolute;
   top:10%;
   left: 20%
